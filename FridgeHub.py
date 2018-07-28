@@ -11,6 +11,7 @@ FridgeEmpty_Check = 0
 if  FridgeEmpty == "yes":
     print("Saving... Don't exit")
     SaveData = open('FridgeTracker.txt','w')
+    SaveData.write("Empty!")
     print("Saved")
 
 else:
@@ -21,12 +22,14 @@ else:
     print("Food")
     FoodName = input("Name all the food you want to add to the fridge tracker")
     print ("Saving... Don't exit")
-    SaveOverWrite = input("Want to remove everything from last save?")
+    SaveOverWrite = input("Want to remove everything from last save? (If your last save was empty then say yes)")
 if SaveOverWrite == "yes":
     SaveData = open('FridgeTracker.txt','w')
+    SaveData.write(FoodName)
     print("Done Saving.")
 if SaveOverWrite == "no":
     SaveData = open('FridgeTracker.txt','a')
+    SaveData.write(FoodName)
     print("Done Saving.")
 print("Bye!!!!!!!")
 Exit = input('Press Enter to exit')
