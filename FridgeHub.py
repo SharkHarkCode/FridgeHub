@@ -12,6 +12,7 @@ if  FridgeEmpty == "yes":
     print("Saving... Don't exit")
     SaveData = open('FridgeTracker.txt','w')
     SaveData.write("Empty!")
+    SavaData.close()
     print("Saved")
 
 else:
@@ -26,10 +27,12 @@ else:
 if SaveOverWrite == "yes":
     SaveData = open('FridgeTracker.txt','w')
     SaveData.write(FoodName)
+    SavaData.close()
     print("Done Saving.")
 if SaveOverWrite == "no":
     SaveData = open('FridgeTracker.txt','a')
     SaveData.write(FoodName)
+    SavaData.close()
     print("Done Saving.")
 print("Bye!!!!!!!")
 Exit = input('Press Enter to exit')
