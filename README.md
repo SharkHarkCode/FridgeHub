@@ -1,1 +1,1 @@
-"# FridgeHub" 
+"# FridgeHub"
