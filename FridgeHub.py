@@ -1,6 +1,7 @@
 import time
 import turtle
 import math
+import os
 print("When asked questions MAKE IT LOWERCASE, if it the entire answer is not lowercase the app will stop working.")
 SaveOverWrite = 0
 SaveData = 0
